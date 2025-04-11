@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <script src="https://kit.fontawesome.com/492a3e981a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button id="boton-modo" class="modo-toggle">🌙 Modo Noche</button>
+  <header class="cabeza"> 
+    <a href="../index.html" class="hola"><!--<img src="../img/img1.png  alt="Logo de la empresa""--> <img src="https://marketplace.canva.com/EAGEsOATo5A/2/0/1600w/canva-vintage-logo-gym-opaco-Se4f117w6n4.jpg" alt="Logo de la empresa"><h2 class="titulo">PowerGYM</h2></a>
+  <ul class="mayor">
+    
+    <li><a href="Clases.html" class="menor"><i class="fa-solid fa-calendar   fa-flip"  style="color: #005eff;"></i></i>Clases</a></li>
+    <li><a href="precio.html" class="menor"><i class="fa-solid fa-cart-shopping fa-flip" style="color: #005eff;"></i>Precios</a></li>
+    <li class="submenuCreado">
+      <a href="entrenadores.html" class="menor ">
+        <i class="fa-solid fa-user fa-flip" style="color: #005eff;"></i>Entrenadores
+      </a>
+      <ul class="submenu-lista">
+        <li><a href="#">Personal Trainers</a></li>
+        <li><a href="#">Nutricionistas</a></li>
+        <li><a href="#">Fisioterapeutas</a></li>
+      </ul>
+    
+    </li>
+    <li><a href="contacto.html" class="menor"><i class="fa-solid fa-phone fa-flip" style="color: #0a49db;"></i>Formulario</a>  </li>
+    <li><a href="blog.html" class="menor"><i class="fa-solid fa-house fa-flip" style="color: #0a49db;"></i>BlogFitnes </a></li>
+  </ul>
+</header>
+
+    <hr class="linea">
+    <section class="padre">
+        <h1 class="tituloForm">Comprete el formulario</h1>
+      
+
+
+
+        <!-- Spinner oculto por defecto -->
+      <div class="spinner hidden" id="spinner"></div>
+
+    
+
+    <!-- Simulación de envío con checkbox
+    <input type="checkbox" id="enviarCheck" class="hidden" /> -->
+    <form id="formulario">
+      <label for="nom">Nombre:</label>
+      <input type="text" id="nom" name="nombre" required pattern="[A-Za-z\s]+" />
+      
+      <label for="ape">Apellido paterno:</label>
+      <input type="text" id="ape" name="apellido" required pattern="[A-Za-z\s]+" />
+      
+      <label for="apeM">Apellido Materno:</label>
+      <input type="text" id="apeM" name="apellidoM" required pattern="[A-Za-z\s]+" />
+      
+      <label for="rfcid">RFC:</label>
+      <input type="text" id="rfcid" name="rfc" required pattern="[A-Za-z\s]+" />
+      
+      <label for="CodigoP">Código Postal</label>
+      <input type="number" id="CodigoP" name="CodigoP" required />
+      
+      <!-- Selects con required -->
+      ...
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required />
+      
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="idfecha" name="fecha" required />
+    <!-- <label for="enviarCheck" class="btn-enviar">Enviar</label> -->
+    <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+
+      <!-- Modal de confirmación -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <p>Formulario enviado con éxito 🎉</p>
+          <label for="enviarCheck" class="cerrar-modal">Cerrar</label>
+
+        </div>
+      </div>
+  </section>
+
+    <hr class="linea">
+    <footer class="padrefooter">    
+        <p class="textfooter">Derechos reservados 2025</p>
+        <div class="redes">  
+            <a href="#" class="minredes"><i class="fa-solid fa-user" ></i>Instagram</a>
+            <a href="#" class="minredes"> <i class="fa-solid fa-user" ></i>Youtube</a>
+            <a href="#" class="minredes"><i class="fa-solid fa-user" ></i>Facebook</a>
+            <a href="#" class="minredes"><i class="fa-solid fa-user" ></i>Twitter</a>
+            <h4  class="finfooter" >Contacto</h4>
+            <p class="finfooter">gaspargonzalo024@gmail.com</p>
+            <p class="finfooter">Direccion:IBC, Ecuador 185, Y4607 San Salvador de Jujuy, Jujuy, Argentina</p>
+            <p class="finfooter2">Creado por Gaspar Gonzalo Nahuel</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+      const botonModo = document.getElementById('boton-modo');
+      const cuerpo = document.body;
+    
+      botonModo.addEventListener('click', () => {
+        cuerpo.classList.toggle('modo-noche');
+        
+        if (cuerpo.classList.contains('modo-noche')) {
+          botonModo.textContent = '☀️ Modo Claro';
+        } else {
+          botonModo.textContent = '🌙 Modo Noche';
+        }
+      });
+    </script>
+</body>
+</html>

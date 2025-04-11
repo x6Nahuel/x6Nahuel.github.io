@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/precio.css">
+    <script src="https://kit.fontawesome.com/492a3e981a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="modo-noche-wrapper">
+    <button id="modo-noche-btn" class="modo-noche">
+      🌙 Modo Noche
+    </button>
+  </div>
+ 
+    <header class="cabeza"> 
+      
+        <a href="../index.html" class="hola"><img src="https://marketplace.canva.com/EAGEsOATo5A/2/0/1600w/canva-vintage-logo-gym-opaco-Se4f117w6n4.jpg" alt="Logo de la empresa"><h2 class="titulo">PowerGYM</h2></a>
+      <ul class="mayor">
+        
+        <li><a href="Clases.html" class="menor"><i class="fa-solid fa-calendar   fa-flip"  style="color: #005eff;"></i></i>Clases</a></li>
+        <li><a href="precio.html" class="menor"><i class="fa-solid fa-cart-shopping fa-flip" style="color: #005eff;"></i>Precios</a></li>
+        
+        <li class="submenuCreado">
+          <a href="entrenadores.html" class="menor ">
+            <i class="fa-solid fa-user fa-flip" style="color: #005eff;"></i>Entrenadores
+          </a>
+          <ul class="submenu-lista">
+            <li><a href="entrenadores.html">Personal Trainers</a></li>
+            <li><a href="entrenadores.html">Nutricionistas</a></li>
+            <li><a href="entrenadores.html">Fisioterapeutas</a></li>
+          </ul>
+        
+        </li>
+        <li><a href="contacto.html" class="menor"><i class="fa-solid fa-phone fa-flip" style="color: #0a49db;"></i>Formulario</a>  </li>
+        <li><a href="blog.html" class="menor"><i class="fa-solid fa-house fa-flip" style="color: #0a49db;"></i>BlogFitnes </a></li>
+      </ul>
+      
+    </header>
+
+    <!--Tabla de precio-->
+
+    <div class="setionPadre">
+        <div class="precios-container">
+          <div class="toggle">
+            <label>
+                <h1>  <input type="checkbox" id="toggle-precio">  Ver precios anuales</h1>
+            </label>
+          </div>
+        
+          <div class="precios-grid" id="grid-precios">
+            <div class="plan" data-precio="mensual">
+              <h3>Musculacion</h3>
+              <div class="precio">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/powerlifting-1551253015.jpg" alt="">
+                <span class="precio-mensual">$10/mes</span>
+                <span class="precio-anual">$100/año</span>
+              </div>
+              <p class="tooltip" data-tooltip="Incluye acceso limitado a máquinas">Acceso limitado</p>
+            </div>
+            <div class="plan" data-precio="mensual">
+              <h3>BoxeoFitnes</h3>
+              <div class="precio">
+                <img src="../img/BoxeoFitnes.jpg" alt="">
+                <span class="precio-mensual">$20/mes</span>
+                <span class="precio-anual">$200/año</span>
+              </div>
+              <p class="tooltip" data-tooltip="Incluye clases grupales">Clases grupales</p>
+            </div>
+            <div class="plan" data-precio="mensual">
+              <h3>CrossFit</h3>
+              <div class="precio">
+                <img src="../img/CrossFit.jpg" alt="">
+                <span class="precio-mensual">$35/mes</span>
+                <span class="precio-anual">$300/año</span>
+              </div>
+              <p class="tooltip" data-tooltip="Acceso ilimitado y asesor personal">Todo incluido</p>
+            </div>
+            <div class="plan" data-precio="mensual">
+              <h3>Movilidad Articular</h3>
+              <div class="precio">
+                <img src="../img/StretchingMovilidadArticular.jpg" alt="">
+                <span class="precio-mensual">$50/mes</span>
+                <span class="precio-anual">$450/año</span>
+              </div>
+              <p class="tooltip" data-tooltip="Hasta 4 miembros del mismo hogar">Plan familiar</p>
+            </div>
+            <div class="plan" data-precio="mensual">
+              <h3>Entrenamiento Funcional</h3>
+              <div class="precio">
+                <img src="../img/EntrenamientoFuncional.jpg" alt="">
+                <span class="precio-mensual">$80/mes</span>
+                <span class="precio-anual">$700/año</span>
+              </div>
+              <p class="tooltip" data-tooltip="Ideal para empresas y oficinas">Para empresas</p>
+            </div>
+            <div class="plan" data-precio="mensual">
+                <h3>PowerLifting</h3>
+                <div class="precio">
+                  <img src="../img/Powerlifting.jpg" alt="">
+                  <span class="precio-mensual">$80/mes</span>
+                  <span class="precio-anual">$700/año</span>
+                </div>
+                <p class="tooltip" data-tooltip="Ideal para empresas y oficinas">Para empresas</p>
+              </div>
+              <div class="plan" data-precio="mensual">
+                <h3>EspecialistaFuerza</h3>
+                <div class="precio">
+                  <img src="../img/EspecialistaFuerza.jpg" alt="">
+                  <span class="precio-mensual">$80/mes</span>
+                  <span class="precio-anual">$700/año</span>
+                </div>
+                <p class="tooltip" data-tooltip="Ideal para empresas y oficinas">Para empresas</p>
+              </div>
+              <div class="plan" data-precio="mensual">
+                <h3>Musculacion Clasica</h3>
+                <div class="precio">
+                  <img src="../img/MusculaciónClásica.jpg" alt="">
+                  <span class="precio-mensual">$80/mes</span>
+                  <span class="precio-anual">$700/año</span>
+                </div>
+                <p class="tooltip" data-tooltip="Ideal para empresas y oficinas">Para empresas</p>
+              </div>
+          </div>
+        </div>
+        
+        <script>
+          const toggle = document.getElementById('toggle-precio');
+          const planes = document.querySelectorAll('.plan');
+        
+          toggle.addEventListener('change', () => {
+            planes.forEach(plan => {
+              plan.dataset.precio = toggle.checked ? 'anual' : 'mensual';
+            });
+          });
+        </script>
+        
+    </div>
+<!--Tabla de precio-->
+
+<br><br><br><br>
+
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.792981408719!2d-65.30729182386546!3d-24.178992034574748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f6bc6bf17b9%3A0xea236889f3ad68fd!2sBarrio%20Belgrano%2C%20Y4600%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1743970667885!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </footer>
+    <footer class="padrefooter">    
+       
+        <p class="textfooter">Derechos reservados 2025</p>
+        <div class="redes">  
+            <a href="#" class="minredes"><i class="fa-solid fa-user"></i>Instagram</a>
+            <a href="#" class="minredes"> <i class="fa-solid fa-user"></i>Youtube</a>
+            <a href="#" class="minredes"><i class="fa-solid fa-user"></i>Facebook</a>
+            <a href="#" class="minredes"><i class="fa-solid fa-user"></i>Twitter</a>
+            <h4  class="finfooter" >Contacto</h4>
+            <p class="finfooter">gaspargonzalo024@gmail.com</p>
+            <p class="finfooter">Direccion:IBC, Ecuador 185, Y4607 San Salvador de Jujuy, Jujuy, Argentina</p>
+            <p class="finfooter2">Creado por Gaspar Gonzalo Nahuel</p>
+        </div>
+    </footer>
+
+    <script>
+      const btnModoNoche = document.getElementById("modo-noche-btn");
+      btnModoNoche.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        btnModoNoche.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+      });
+    </script>
+
+</body>
+</html>

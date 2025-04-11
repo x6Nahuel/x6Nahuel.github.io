@@ -1,0 +1,306 @@
+*{
+  margin: 0px;
+  padding: 1px;
+}
+/* cabezera*/
+.cabeza{
+    display: flex;
+ /*   background: #3f3737;*/
+    background: rgba(0, 0, 0, 0.925);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+ /*     position: fixed;*/
+    width: 100%;
+    height: 220px;
+}
+.hola{
+   /* background: red;*/
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+img{
+    height: 150px;
+    
+}
+.titulo{
+    color: white;  
+    text-decoration: none;
+    font-size: 35px;
+}
+.mayor{
+    display: flex;
+    margin: 10;
+    list-style: none;
+    padding: 0px;
+}
+.menor{
+    margin: 20px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+}
+.menor:hover{
+   font-size: 25px;
+    color:  #b3b8aee8;
+    transition: 0.900s;
+}
+
+.titulo:hover{
+    font-size: 27px;
+    color:  #ffffffe8;
+    transition: 0.400s;
+}
+.submenuCreado{
+  position: relative;
+}
+.submenu-lista {
+  position: absolute;
+  top: 100%; /* debajo del elemento padre */
+  left: 0;
+  background: #2c2c2c;
+  list-style: none;
+  padding: 10px;
+  display: none; /* oculto por defecto */
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  min-width: 160px;
+}
+
+.submenu-lista li {
+  margin: 5px 0;
+}
+
+.submenu-lista a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.submenuCreado:hover .submenu-lista {
+  display: block;
+}
+.linea{
+    margin: 10px;
+    background: #7a7a7a;
+}
+/* Seccion*/
+
+/* Seccion*/
+
+
+/* Validación en tiempo real */
+input:invalid {
+    border: 2px solid red;
+  }
+  input:valid {
+    border: 2px solid green;
+  }
+  
+  /* Spinner de carga */
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ccc;
+    border-top: 6px solid #4CAF50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  .hidden {
+    display: none;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Modal de confirmación */
+ 
+  /* Botón personalizado */
+  .btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Responsive con Flex y Grid */
+  .padre {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  @media (min-width: 768px) {
+    form {
+      grid-template-columns: 1fr 1fr;
+    }
+    form label, form input, form select {
+      grid-column: span 2;
+    }
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  #enviarCheck:checked ~ .modal {
+    display: flex;
+  }
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .cerrar-modal {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Ocultamos modal por defecto */
+.modal {
+    display: none;
+  }
+  
+  /* Si el formulario es válido, mostramos el modal */
+  form:valid + .modal {
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  footer*/
+.padrefooter{
+    background: #000000;
+}
+.textfooter{
+    font-size: 27px;
+    text-align: center;
+    color: white;
+}
+.redes{
+    margin: 5px;
+    padding: 5px;
+    
+   text-align: right;
+    font-size: 15px;
+}
+.minredes{
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+.finfooter{
+    color: white;
+    text-align: center;
+}
+.finfooter2{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+
+}
+/*  footer*/
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /* Estilo del botón */
+.modo-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos modo noche */
+.modo-noche {
+  background-color: #121212;
+  color: white;
+}
+
+.modo-noche .cabeza,
+.modo-noche .padrefooter {
+  background-color: #1e1e1e;
+}
+
+.modo-noche .menor,
+.modo-noche .titulo,
+.modo-noche .textfooter,
+.modo-noche .minredes,
+.modo-noche .finfooter,
+.modo-noche .finfooter2 {
+  color: #cfcfcf;
+}
+
+.modo-noche .submenu-lista {
+  background-color: #2e2e2e;
+}
+
+.modo-noche input,
+.modo-noche select,
+.modo-noche textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #777;
+}

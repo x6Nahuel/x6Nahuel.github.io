@@ -1,0 +1,56 @@
+.titulo{
+    background: #df9090;
+    color: rebeccapurple;
+    margin: 20px;
+}
+.cabezera{
+    margin: 20px;
+    background: black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.links{
+    padding: 10px;
+    margin: 10px;
+    color: rgb(202, 136, 13);
+    text-decoration: none;
+}
+.links:hover{
+    font-size: 17px;
+    color: #e414d2;
+}
+/* caja de flex box*/
+.container{
+    background: orange;
+    margin: 30px auto ;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+   
+}
+.hijo{
+    font-size: 30px;
+    width: 80px;
+    height: 50px;
+    color: rgb(221, 207, 207);
+    background: #050505;
+    padding: 25px;
+    margin: 30px ;
+    text-align: center;
+}
+
+
+
+
+
+
+.linkAle{
+    color: brown;
+    text-decoration: none;
+    font-size: 40px;
+}
