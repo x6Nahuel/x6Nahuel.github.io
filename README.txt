@@ -3,4 +3,4 @@ https://drive.google.com/file/d/1i6_ZJOGQPHJzCh-_A-sh5FXT4W9yiqVS/view?usp=shari
 GitHub Link Download repository
 https://github.com/x6Nahuel/x6Nahuel.github.io.git
 GitHub pages
-https://x6Nahuel.github.io/
+https://x6nahuel.github.io/
